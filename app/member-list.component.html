@@ -1,0 +1,12 @@
+﻿<section>
+<p>Check this in</p>
+  
+    <div id="list-container">
+        <member-item *ngFor="let member of members" [model]="member"
+                     (deleted)="onMemberDeleted($event)"
+                     >
+        </member-item>
+    </div>
+   
+
+</section>
